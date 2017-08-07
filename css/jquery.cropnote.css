@@ -1,0 +1,239 @@
+/*image note desc*/
+.cropnote-desc{
+	font-family: Verdana, Sans-Serif;
+	font-size:11px;
+	color:#999;
+	text-align:left;
+	padding-left:12px;
+	padding-top: 4px;
+    margin: -20px 10px 0px;
+	text-decoration:none;
+	float: left;
+}
+
+/*image add a note button*/
+.cropnote-add {
+	background: url(../images/asterisk_yellow.png) no-repeat 3px 3px;
+    border: solid 0px #ccc !important;
+    color: #999 !important;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-family: Verdana, Sans-Serif;
+    font-size: 11px;    
+    height: 18px;
+    line-height: 18px;    
+    padding: 2px 0px 0px 20px;
+    margin: -20px 10px 0px;
+    text-decoration: none;
+}
+
+.cropnote-add:hover {
+    color: #999;
+}
+
+/*image note loader*/
+.cropnote-loading {
+	background: url(../images/loading.gif) no-repeat;
+}
+
+/*image note error*/
+.cropnote-error {
+	background: url(../images/error.gif) no-repeat;
+}
+
+/*image note author*/
+.cropnote-author {
+	font-size:11px;
+	font-style:italic;
+	color:#CCC;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+
+.cropnote-author img {
+	border: 0px;
+}
+
+/*image note canvas*/
+.cropnote-canvas {
+	border:1px solid #000000; text-align: left;
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+	
+	-moz-border-radius: 1px;
+	-khtml-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+.cropnote-view {
+    display: none;
+    position: relative;
+}
+.cropnote-area {
+    border: 1px solid #000000;
+    position: absolute;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.cropnote-area div {
+    border: 1px solid #FFFFFF;
+    display: block;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.cropnote-area-background {
+	background-color: #FFFFFF;
+	opacity: 0.0;
+	filter: alpha(opacity=0);
+	position: absolute;
+}
+.cropnote-area-hover div {
+    border-color: #28B6F1 !important;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.cropnote-area-editable {
+    cursor: pointer;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.cropnote-area-editable-hover div {
+    border-color: #28B6F1 !important;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.cropnote-note {
+    background: none repeat scroll 0 0;
+	background-image:url(../images/black.png);
+    border: solid 1px #333;
+    color: #FFF;
+    display: none;
+    font-family: Verdana, Sans-Serif;
+    font-size: 11px;
+    max-width: 200px;
+    padding: 6px 10px;
+    position: absolute;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.cropnote-note .actions {
+    display: block;
+    font-size: 80%;
+}
+.cropnote-edit {
+    display: none;
+}
+.cropnote-edit-area {
+    z-index: 10020;
+}
+.cropnote-background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 10001;
+}
+.cropnote-background-image {
+	width: 100%;
+	height: 100%;
+}
+
+#image-annotate-edit-form {
+	font-family: Verdana, Sans-Serif;
+    font-size: 11px;
+	background: #F7F6F4 none repeat scroll 0 0;
+    border: 1px solid #E2E2E2;
+    height: 160px;
+    padding: 7px;
+    position: absolute;
+    width: 260px;
+	margin-top:10px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	z-index: 10020;
+}
+#image-annotate-edit-form form {
+    clear: right;
+    margin: 0 !important;
+    padding: 0;
+    z-index: 999;
+}
+#image-annotate-edit-form .box {
+    margin: 0;
+}
+#image-annotate-edit-form input.form-text, #image-annotate-edit-form #edit-comment-wrapper textarea {
+	
+}
+
+#image-annotate-edit-form input {
+	font-family: Verdana, Sans-Serif;
+	font-size:11px;
+	 margin:1px;
+	 width:75%;
+}
+
+#image-annotate-edit-form textarea {
+	font-family: Verdana, Sans-Serif;
+	font-size:11px;
+    height: 50px;   
+    width: 240px;
+}
+#image-annotate-edit-form fieldset {
+    background: transparent none repeat scroll 0 0;
+}
+#image-annotate-edit-form .form-item {
+    margin: 0 0 5px;
+}
+#image-annotate-edit-form .form-button, #image-annotate-edit-form .form-submit {
+    margin: 0;
+}
+#image-annotate-edit-form a {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+    border: solid 1px #ccc;
+    color: #333;
+    cursor: pointer;
+    display: block;
+    float: left;    
+    font-family: Verdana, Sans-Serif;
+    font-size: 11px;        
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 0 2px 24px;
+    margin: 3px 6px 3px 0;
+    width: 48px;
+}
+#image-annotate-edit-form a:hover {
+    background-color: #eee;
+}
+.cropnote-edit-area {
+    border: 1px solid #FC0;
+    cursor: move;
+    display: block;
+    height: 60px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 60px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+/*image note button*/
+.cropnote-ok {
+    background-image: url(../images/accept.png);
+}
+.cropnote-edit-delete {
+    background-image: url(../images/delete.png);
+}
+.cropnote-close {
+    background-image: url(../images/cross.png);
+}
